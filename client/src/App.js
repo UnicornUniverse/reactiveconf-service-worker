@@ -15,11 +15,11 @@ class App extends Component {
         </header>
 {/*
         <Ex2/>
-
+        <Ex4/>
         <Ex5/>
         <Ex6/>
         */}
-        <Ex4/>
+
 
       </div>
     );

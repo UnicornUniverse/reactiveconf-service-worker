@@ -9,4 +9,4 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 //Exercise 1 - Add SW to app
 
-registerServiceWorker();
+//registerServiceWorker();
