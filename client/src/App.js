@@ -13,8 +13,11 @@ class App extends Component {
           <img src="logo.svg" className="App-logo" alt="logo" />
           <h1 className="App-title">Service Workers at your Service</h1>
         </header>
-{/*
+
         <Ex2/>
+
+{/*
+
         <Ex4/>
         <Ex5/>
         <Ex6/>
