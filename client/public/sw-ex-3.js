@@ -4,7 +4,6 @@ const STATIC_CACHE = appName + "_STATIC_" + appVersion;
 
 const filesToCachePriority = [
   "", //root for the cache - so the page will load even offline
-  "/",
   "./",
   "./index.html",
   "./manifest.json",

@@ -6,7 +6,6 @@ const DYNAMIC_CACHE = appName + "_DYNAMIC_" + appVersion;
 const filesToCachePriority = [
   "", //root for the cache - so the page will load even offline
   "/",
-  "./",
   "./index.html",
   "./manifest.json",
   "./static/js/bundle.js"
