@@ -25,5 +25,6 @@ It will start server on port 5000 and client on port 3000. All requests for data
 
 It will start only server part. You can try your application on page <http://localhost:5000>
 
-
+# Push notification
 For push notification you need your own serviceAccountKey. In this example it is intentionally broken.
+You need to just update file "server/serviceAccountKey.json" with correct information. Registering at FireBase is free and push notifications are free as well. 
