@@ -11,7 +11,7 @@ export default function register() {
 
 function registerValidSW(swUrl) {
   navigator.serviceWorker
-    .register(swUrl, {updateViaCache: 'all'}) //https://developers.google.com/web/updates/2018/06/fresher-sw
+    .register(swUrl, {updateViaCache: 'none'}) //https://developers.google.com/web/updates/2018/06/fresher-sw
     .then(registration => {
       console.log("service worker registered");
     })
