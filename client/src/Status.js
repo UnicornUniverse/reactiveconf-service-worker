@@ -5,8 +5,7 @@ class Status extends Component {
     status: this.getOnlineStatus(),
     speed: this.getConnectionInfo().downlink,
     effectiveType: this.getConnectionInfo().effectiveType,
-    rtt: this.getConnectionInfo().rtt,
-    type: this.getConnectionInfo().type
+    rtt: this.getConnectionInfo().rtt
   };
   constructor(props){
     super(props);
@@ -59,8 +58,7 @@ class Status extends Component {
     this.setState({
       speed: connection.downlink,
       effectiveType: connection.effectiveType,
-      rtt: connection.rtt,
-      type: connection.type
+      rtt: connection.rtt
 
     });
   }
@@ -72,7 +70,6 @@ class Status extends Component {
         <p>Your internet speed is about  <strong>{this.state.speed}</strong> Mb/s</p>
         <p>Your internet effectiveType is  <strong>{this.state.effectiveType}</strong></p>
         <p>Your internet rtt is about  <strong>{this.state.rtt}</strong> ms</p>
-        <p>Your internet type is <strong>{this.state.type}</strong></p>
       </div>
     );
   }
