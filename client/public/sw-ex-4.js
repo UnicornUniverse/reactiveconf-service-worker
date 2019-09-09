@@ -18,6 +18,7 @@ const filesToCache = [
   "./uni/uni_is.png",
   "./avatars/missing.svg",
   "./avatars/offline.svg",
+  "./favicon.ico",
   "./favicon-194x194.png"
 ];
 

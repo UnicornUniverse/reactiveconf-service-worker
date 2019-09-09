@@ -1,5 +1,5 @@
 const appName = "appname";
-const appVersion = "1.5.0";
+const appVersion = "1.6.0";
 const STATIC_CACHE = appName + "_STATIC_" + appVersion;
 const DYNAMIC_CACHE = appName + "_DYNAMIC_" + appVersion;
 
@@ -18,6 +18,7 @@ const filesToCache = [
   "./uni/uni_is.png",
   "./avatars/missing.svg",
   "./avatars/offline.svg",
+  "./favicon.ico",
   "./favicon-194x194.png"
 ];
 
