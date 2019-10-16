@@ -22,10 +22,14 @@ class Push extends Component {
   }
 
   _initFireBase() {
-    let config = {
-      apiKey: "AIzaSyBQGjBv8-eXDMBh-ol6Cs6IK00uSeAToqU",
-      projectId: "reactiveconf-d8d2c",
-      messagingSenderId: "756277296885"
+    const config = {
+      apiKey: "AIzaSyAXkkz2X25ABifKZoYZkMTqpwwEAN0Ys0s",
+      authDomain: "uu-service-worker-demo.firebaseapp.com",
+      databaseURL: "https://uu-service-worker-demo.firebaseio.com",
+      projectId: "uu-service-worker-demo",
+      storageBucket: "uu-service-worker-demo.appspot.com",
+      messagingSenderId: "1045613857370",
+      appId: "1:1045613857370:web:ccf4244ecfc69ca76ee663"
     };
 
     if (!FirebaseApp.apps.length) {
@@ -34,9 +38,11 @@ class Push extends Component {
   }
 
   _initServiceWorker() {
-    let messaging = FirebaseApp.messaging();
+
 
     if ("serviceWorker" in navigator) {
+      const messaging = FirebaseApp.messaging();
+      //messaging.usePublicVapidKey("BLQc4dOlxsEkH2z6szm6dM42RImhtDknWqBRd2EIIu2eRVLfa3oulilIYN4XJqV46EBypawpgzMX-JW4l50RnrI");
       navigator.serviceWorker.ready
         .then(registration => {
           if (!messaging.registrationToUse) {
@@ -53,10 +59,16 @@ class Push extends Component {
           });
 
           //request permission for Push Message.
-          messaging
+          Notification
             .requestPermission()
-            .then(() => {
-              messaging.getToken().then(token => this._setToken(token));
+            .then((permission) => {
+              if (permission === 'granted') {
+                console.log('Notification permission granted.');
+                messaging.getToken().then(token => this._setToken(token));
+              } else {
+                console.log('Unable to get permission to notify.');
+              }
+
             })
             .catch(function(err) {
               console.log("Push Message is disallowed", err);

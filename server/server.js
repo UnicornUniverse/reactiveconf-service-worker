@@ -13,7 +13,7 @@ const serviceAccount = require('./serviceAccountKey.json');
 const topicName = "dev";
 
 admin.initializeApp({
-  //credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert(serviceAccount)
 });
 
 app.use(express.static(path.join(__dirname, 'build'), {maxAge: "30d"}));
