@@ -23,13 +23,12 @@ class Push extends Component {
 
   _initFireBase() {
     const config = {
-      apiKey: "AIzaSyAXkkz2X25ABifKZoYZkMTqpwwEAN0Ys0s",
-      authDomain: "uu-service-worker-demo.firebaseapp.com",
-      databaseURL: "https://uu-service-worker-demo.firebaseio.com",
-      projectId: "uu-service-worker-demo",
-      storageBucket: "uu-service-worker-demo.appspot.com",
-      messagingSenderId: "1045613857370",
-      appId: "1:1045613857370:web:ccf4244ecfc69ca76ee663"
+      apiKey: "AIzaSyC0QU_B-oXtEf8LRGVppVeFozzVKUPXzw0",
+      authDomain: "reactive-conf-uni.firebaseapp.com",
+      projectId: "reactive-conf-uni",
+      storageBucket: "reactive-conf-uni.appspot.com",
+      messagingSenderId: "441603592486",
+      appId: "1:441603592486:web:95ec4be3d5a60e2adcf1e7"
     };
 
     if (!FirebaseApp.apps.length) {
