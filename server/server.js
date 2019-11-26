@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 const admin = require('firebase-admin');
 
 const serviceAccount = require('./serviceAccountKey.json');
-const topicName = "dev";
+const topicName = "test";
 
 admin.initializeApp({
   //credential: admin.credential.cert(serviceAccount)
